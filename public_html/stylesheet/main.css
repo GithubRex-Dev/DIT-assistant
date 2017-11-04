@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2017, 5:45:57 PM
+    Author     : Rex
+*/
+a{ 
+    text-decoration: none;
+    color: black;
+    cursor: auto;
+}
+a:hover{ 
+    color: black;
+}
+.homepageHeader {
+    text-align: center;
+    background-color: #8c8989;
+    height: 60px;
+}
+.homepage {
+    text-align: center;
+}
+.homepageImageHeader {
+    margin: 0 auto;
+    max-width: 60%;
+    max-height: 60%;
+    background-color: transparent !important;
+    border: none;
+}
+.homepageImage {
+    margin: 0 auto;
+    max-width: 40%; 
+    max-height: 40%;
+    background-color: transparent !important;
+    border: none;
+}
+.homepageImageFooter {
+    margin: 0 auto;
+    max-width: 25%;
+    max-height: 10%;
+    background-color: transparent !important;
+    border: none;
+}
+.breadcrumbImage {
+    margin: 0 auto;
+    max-width: 60%;
+    max-height: 60%;
+    background-color: transparent !important;
+    border: none;
+}
+.breadcrumbHome {
+    text-align: center;
+    background-color: #d9d9d9;
+}
+.breadcrumbRecent {
+    text-align: center;
+    background-color: #8c8989;
+}
+.breadcrumbCurrent {
+    text-align: center;
+    background-color: #474747;
+    height: 60px;
+}
+.breadcrumbText {
+    color: #d9d9d9;
+    font-weight: 50;
+    margin-left: 2px;
+}

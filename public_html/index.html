@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="ui-mobile">
+    <head>
+        <title>Grange Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a">
+        <!--Home Page-->
+        <div data-role="page" data-theme="a" id="homePage" data-url="homePage" class="ui-page ui-page-theme-a ui-page-header-fixed ui-page-footer-fixed" style="padding-top: 62px; padding-bottom: 82px; min-height: 532px;">
+            <div class="homepageHeader ui-header ui-bar-inherit ui-header-fixed" data-role="header" data-position="fixed" role="banner">
+                <div>Grange Mobile</div>
+                <img class="homepageImageHeader" src="images/menu.png">
+            </div>           
+            <div data-role="main" class="ui-content">
+                <div class="ui-grid-a" data-filter="true" data-filter-placeholder="Search..." id="HomePagelist">
+                    <div class="ui-block-a homepage"><!--where student can check his or her selected modules and the details-->
+                        <a href="#modulesPage" class="ui-link">
+                            <img src="images/modules.png" class="ui-btn homepageImage">Modules
+                        </a>
+                    </div>
+                    
+                    <div class="ui-block-b homepage"><!--where student can check his or her lecturers-->
+                        <a href="#lecturerPage" class="ui-link">
+                            <img src="images/lecturers.png" class="ui-btn homepageImage">Lecturers
+                        </a>
+                    </div>
+                    
+                    <div class="ui-block-a homepage"><!--where student can check his or her selected messages from lecturers and the details-->
+                        <a href="#msgPage" class="ui-link">
+                            <img src="images/msg.png" class="ui-btn homepageImage">Message
+                        </a>
+                    </div>
+                    
+                    <div class="ui-block-b homepage">
+                        <a href="#libraryPage" class="ui-link">
+                            <img src="images/library.png" class="ui-btn homepageImage">Library
+                        </a>
+                    </div>
+                    
+                    <div class="ui-block-a homepage">
+                        <a href="#mediaPage" class="ui-link">
+                            <img src="images/multimedia.png" class="ui-btn homepageImage">Multimedia
+                        </a>
+                    </div>
+                    
+                    <div class="ui-block-b homepage"><!--maps location-->
+                        <a href="#mapPage" class="ui-link">
+                            <img src="images/map.png" class="ui-btn homepageImage">Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#8c8989;height:11%" data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+		<div class="ui-grid-a" id="homePageListFooter">
+                    <div class="ui-block-a homepage"><a href="http://www.dit.ie" class="ui-link"><img src="images/website.png" class="ui-btn homepageImageFooter"></a></div>
+                    <div class="ui-block-b homepage"><a href="#aboutPage" class="ui-link"><img src="images/about.png" class="ui-btn homepageImageFooter"></a></div>
+                </div>
+            </div>
+        </div> 
+        <!--end of home page-->
+        <!--modules page-->
+        <div data-role="page" id="modulesPage" data-url="modulesPage"> 
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <!-- Breadcrumb Navigation -->
+                <div data-role="listview" class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome"><a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage"></a></div>
+                    <div class="ui-block-c breadcrumbCurrent"><h4 class="breadcrumbText">Modules</h4></div>   
+                </div>
+                <!-- End of Breadcrumb Navigation -->              
+            </div>
+            <div data-role="main" class="ui-content">	
+                <ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Search..." id="modulesPageList">
+                    <li><a href="#sma">Social Media Application</a></li>
+                    <li><a href="#pdu">Project Definition and UX Treatment</a></li>
+                    <li><a href="#uid" >User Interaction Design</a></li>
+                    <li><a href="#aps">Authoring Principles</a></li>
+                    <li><a href="#dpe">Design Practice</a></li>
+                    <li><a href="#cdt">Creative Digital Tool</a></li>
+                    <li><a href="#img">Information Modeling</a></li>
+                    <li><a href="#pap">Prototype&Production</a></li>	
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h5>Grange Mobile 2017</h5>
+            </div>
+        </div>
+        <!--end of modules page-->
+        <!--sma page-->
+        <div data-role="page" id="sma">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Social Media Application</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.sma.ie" class="ui-link">www.sma.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>1027</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of sma page-->
+        <!--pdu page-->
+        <div data-role="page" id="pdu">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Project Definition and UX Treatment</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.pdu.ie" class="ui-link">www.pdu.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>2005</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of pdu page--> 
+        <!--uid page-->
+        <div data-role="page" id="uid">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>User Interaction Design</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.uid.ie" class="ui-link">www.uid.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>1027</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of uid page-->
+        <!--aps page-->
+        <div data-role="page" id="aps">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Authoring Principles</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.aps.ie" class="ui-link">www.aps.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>4033</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of aps page--> 
+        <!--dpe page-->
+        <div data-role="page" id="dpe">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Design Practice</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.dpe.ie" class="ui-link">www.dpe.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>1027</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of dpe page--> 
+        <!--cdt page-->
+        <div data-role="page" id="cdt">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Creative Digital Tool</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.cdt.ie" class="ui-link">www.cdt.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>1027</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of cdt page-->        
+        <!--img page-->
+        <div data-role="page" id="img">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Information Modeling</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.img.ie" class="ui-link">www.img.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>1027</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of img page--> 
+        <!--pap page-->
+        <div data-role="page" id="pap">
+            <div data-role="header" style="background-color:#474747; height:60px;">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#modulesPage"><img src="images/modules.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Modules</h4>
+                    </div>   
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">Module
+                    <h4>Prototype&Production</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Website
+                    <h4>
+                        <a href="www.pap.ie" class="ui-link">www.pap.ie</a>
+                    </h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">Location
+                    <h4>Aungier Street </h4>
+                    room
+                    <h4>2007</h4>
+                </div>
+                <br>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    credits
+                    <h4>10</h4>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--end of pap page-->  
+        <!--lecturer page-->
+        <div data-role="page" id="lecturerPage" data-url="lecturerPage">
+            <div data-role="panel" id="CharlieCullen"> 
+                <h2>Charlie Cullen</h2>
+                <p>Department and Location:<br>Digital Media Centre<br>Aungier Street<br>Room 2-004</p>
+                <p>Email: <a href="mailto:charlie.cullen@dit.ie" class="ui-link">charlie.cullen@dit.ie</a></p>
+                <a href="#lecturerPage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+            </div> 
+            <div data-role="panel" id="KeithGardiner"> 
+                <h2>Keith Gardiner</h2>
+                <p>Department and Location:<br>Digital Media Centre<br>Aungier Street<br>Room 2-004</p>
+                <p>Email: <a href="mailto:keith.gardiner@dit.ie" class="ui-link">keith.gardiner@dit.ie</a></p>
+                <a href="#lecturerPage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+            </div>
+            <div data-role="panel" id="BrianVaughan"> 
+                <h2>Brian Vaughan</h2>
+                <p>Department and Location:<br>Digital Media Centre<br>Aungier Street<br>Room 2-005</p>
+                <p>Email: <a href="mailto:303149@dit.ie" class="ui-link">303149@dit.ie</a></p>
+                <a href="#lecturerPage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+            </div>
+            <div data-role="panel" id="EvinMcCarthy"> 
+                <h2>Evin McCarthy</h2>
+                <p>Department and Location:<br>Digital Media Centre<br>Aungier Street<br>Room 2-005</p>
+                <p>Email: <a href="mailto:evin.mccarthy@dit.ie" class="ui-link">evin.mccarthy@dit.ie</a></p>
+                <a href="#lecturerPage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+            </div>
+            <div style="background-color:#474747; height:60px;" data-role="header"> 
+                <!-- Breadcrumb Navigation -->
+                <div data-role="listview" class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome"><a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage"></a></div>
+                    <div class="ui-block-c breadcrumbCurrent"><h4 class="breadcrumbText">Lecturers</h4></div>   
+                </div>
+                <!-- End of Breadcrumb Navigation -->
+            </div>
+            <div data-role="main" class="ui-content">	
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." id="peoplePageList">
+                    <li><a href="#CharlieCullen">Charlie Cullen</a></li>
+                    <li><a href="#BrianVaughan">Brian Vaughan</a></li>
+                    <li><a href="#KeithGardiner">Keith Gardiner</a></li>
+                    <li><a href="#EvinMcCarthy">Evin McCarthy</a></li>
+                </ul>		
+            </div>
+            <div data-role="footer">
+                <h5>Grange Mobile 2017</h5>
+            </div>
+        </div>
+        <!--end of lecturer page-->
+        <!--About page-->
+        <div data-role="page" id="aboutPage" data-url="aboutPage" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+            <div style="background-color:#474747; height:60px;" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                <!-- Breadcrumb Navigation -->
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome"><a href="#homePage" class="ui-link"><img src="images/menu.png" class="ui-btn breadcrumbImage"></a></div>
+                    <div class="ui-block-c breadcrumbCurrent"><h4 class="breadcrumbText">About</h4></div>   
+                </div>
+                <!-- End of Breadcrumb Navigation -->
+            </div>
+            <div data-role="main" class="ui-content">    
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>DIT is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. DIT faculty are engaged with teaching and research to push the boundaries of human knowledge. The University has twelve degree-granting Schools in addition to the DIT Institute for Advanced Study.</p>   
+                    <p>Established in 1978, DIT is one of the youngest institution of higher education in the Ireland. The University, which is based in Dublin, Ireland, has an enrollment of over 20,000 degree candidates, including undergraduate, graduate, and professional students. DIT has more than 370,000 alumni around the world.</p> 
+                </div>
+             </div>
+            <div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+                <h5 class="ui-title" role="heading" aria-level="1">Grange Mobile 2017</h5>
+            </div>
+        </div>
+        <!--end of about page-->
+       <!--msg page-->
+        <div data-role="page" id="msgPage" data-url="msgPage" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 817px;">
+            <div style="background-color:#474747; height:60px;" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                <!-- Breadcrumb Navigation -->
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome"><a href="#homePage" class="ui-link"><img src="images/menu.png" class="ui-btn breadcrumbImage"></a></div>
+                    <div class="ui-block-c breadcrumbCurrent"><h4 class="breadcrumbText">Message</h4></div>   
+                </div>
+                <!-- End of Breadcrumb Navigation -->
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." id="msgPageList" class="ui-listview">
+                    <li>
+                        <a href="#msg1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>From:Charlie Cullen</h2>
+                            <h2>Time:13:51 03/03/2017</h2>
+                            <h2>Subject:Notes for Lecture 1</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#msg2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>From:Evin McCarthy</h2>
+                            <h2>Time:10:51 27/10/2016</h2>
+                            <h2>Subject:Design Practice Sample Files</h2>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+            <div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+                <h5 class="ui-title" role="heading" aria-level="1">Grange Mobile 2017</h5>
+            </div>
+        </div>
+        <!--end of msg page-->
+        <div data-role="page" data-url="msg1" id="msg1">
+            <div style="background-color:#474747; height:60px;" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#msgPage"><img src="images/msg.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Message</h4>
+                    </div>   
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all"> 
+                    <h2>From:Charlie Cullen</h2>
+                    <h3>Time:13:51 03/03/2017</h3>
+                    <h3>Title:Notes for Lecture 1</h3>
+                </div>
+                <div class="ui-body ui-body-a ui-corner-all"> 
+                    <p>As an addendum to our previous lecture, here is a good introductory chapter to survey methods that would be worth looking at before you engage a potential user group in exploratory work.</p>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" data-url="msg2" id="msg2">
+            <div style="background-color:#474747; height:60px;" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                <div data-role="listview" class="ui-grid-c">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage"><img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#msgPage"><img src="images/msg.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Message</h4>
+                    </div>   
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <h2>From:Evin McCarthy</h2>
+                    <h3>Time:13:51 03/03/2017</h3>
+                    <h3>Title:Reminder</h3>                   
+                </div>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Dear class,
+                        <br>
+                    A quick reminder about Friday's lecture and the work you should have completed and be ready to show for this week's lecture.
+                    </p>
+                </div>
+            </div>
+        </div>       
+        <!--library page-->
+        <div data-role="page" id="libraryPage" data-url="libraryPage" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+            <div style="background-color:#474747; height:60px;" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                <!-- Breadcrumb Navigation -->
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome"><a href="#homePage" class="ui-link"><img src="images/menu.png" class="ui-btn breadcrumbImage"></a></div>
+                    <div class="ui-block-c breadcrumbCurrent"><h4 class="breadcrumbText">Library</h4></div>   
+                </div>
+                <!-- End of Breadcrumb Navigation -->
+            </div>
+            <div data-role="main" class="ui-content">  
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search for a book..." id="libraryPageList" data-filter-reveal="true" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                    <li>
+                        <a href="#BD" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>Beautiful Data</h2>
+                            <p>2009, OReilly</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#CC" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>Clean Code</h2>
+                            <p>2009, Robert Martin</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#DMMT" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>Dont make me think</h2>
+                            <p>2014, Steve Krug</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#JC" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>Java Cookbook</h2>
+                            <p>2007, OReilly</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#JP" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>JavaScript Patterns</h2>
+                            <p>2010, OReilly</p></a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#LP" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>Learning Python</h2>
+                            <p>2008, OReilly</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#TCPL" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>The C Programming Language</h2>
+                            <p>1988, Brian Kernighan</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#TCC" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>The Clean Coder</h2>
+                            <p>2011, Robert Martin</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#TDET" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>The Design of Everyday Things</h2>
+                            <p>1982, Don Norman</p>
+                        </a>
+                    </li>
+                    <li class="ui-screen-hidden">
+                        <a href="#TIRA" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <h2>The Inmates are Running the Asylum</h2>
+                            <p>1999, Alan Cooper</p>
+                        </a>
+                    </li>
+                </ul>     
+                <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                    <li class="ui-li-static ui-body-inherit ui-first-child"><h2>Aungier Street Library</h2><p style="color: grey">Opening hours:</p><p>Monday - Thursday 9:00 - 21:00</p><p>Friday 9:00 - 17:00</p><p>Saturday 10:00 - 17:00</p></li>
+                    <li class="ui-li-static ui-body-inherit"><h2>Bolton Street Library</h2><p style="color: grey">Opening hours:</p><p>Monday - Thursday 9:00 - 21:00</p><p>Friday 9:00 - 17:00</p><p>Saturday 10:30 - 16:30</p></li>
+                    <li class="ui-li-static ui-body-inherit"><h2>Cathal Brugha Street Library</h2><p style="color: grey">Opening hours:</p><p>Monday - Thursday 9:00 - 22:00</p><p>Friday 9:30 - 17:15</p><p>Saturday 9:30 - 13:30</p></li>
+                    <li class="ui-li-static ui-body-inherit ui-last-child"><h2>Kevin Street Library</h2><p style="color: grey">Opening hours:</p><p>Monday - Thursday 8:00 - 21:00</p><p>Friday 9:30 - 17:35</p><p>Saturday 9:30 - 17:00</p></li>
+                </ul> 
+            </div>
+            <div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+                <h5 class="ui-title" role="heading" aria-level="1">Grange Mobile 2017</h5>
+            </div>
+        </div>
+        <!--end of library page-->
+        <div data-role="page" id="BD" data-url="BD">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>Beautiful Data</h2>
+                        <p style="color: grey">2009, OReilly</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 3 copies</p>
+                            <p>Aungier Street: 4 copies</p>
+                            <p>Bolton Street: 1 copies</p>
+                            <p>Cathal Brugha Street: 6 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="CC" data-url="CC">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>Clean Code</h2>
+                        <p style="color: grey">2009, Robert Martin</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 5 copies</p>
+                            <p>Aungier Street: 3 copies</p>
+                            <p>Bolton Street: 8 copies</p>
+                            <p>Cathal Brugha Street: 6 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div data-role="page" id="DMMT" data-url="DMMT">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>Don't make me think</h2>
+                        <p style="color: grey">2014, Steven Krug</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 10 copies</p>
+                            <p>Aungier Street: 4 copies</p>
+                            <p>Bolton Street: 9 copies</p>
+                            <p>Cathal Brugha Street: 4 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="JC" data-url="JC">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>Java Cookbook</h2>
+                        <p style="color: grey">2007, OReilly</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 10 copies</p>
+                            <p>Aungier Street: 10 copies</p>
+                            <p>Bolton Street: 8 copies</p>
+                            <p>Cathal Brugha Street: 6 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="JP" data-url="JP">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>JavaScript Patterns</h2>
+                        <p style="color: grey">2010, OReilly</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 1 copies</p>
+                            <p>Aungier Street: 2 copies</p>
+                            <p>Bolton Street: 1 copies</p>
+                            <p>Cathal Brugha Street: 0 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="LP" data-url="LP">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>Learning Python</h2>
+                        <p style="color: grey">2009, OReilly</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 10 copies</p>
+                            <p>Aungier Street: 3 copies</p>
+                            <p>Bolton Street: 0 copies</p>
+                            <p>Cathal Brugha Street: 0 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="TCPL" data-url="TCPL">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>The C Programming Language</h2>
+                        <p style="color: grey">2008, OReilly</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 10 copies</p>
+                            <p>Aungier Street: 3 copies</p>
+                            <p>Bolton Street: 0 copies</p>
+                            <p>Cathal Brugha Street: 0 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="TCC" data-url="TCC">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>The Clean Coder</h2>
+                        <p style="color: grey">2011, Robert Martin</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 2 copies</p>
+                            <p>Aungier Street: 0 copies</p>
+                            <p>Bolton Street: 1 copies</p>
+                            <p>Cathal Brugha Street: 0 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div data-role="page" id="TCET" data-url="TCET">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>The Design of Everyday Things</h2>
+                        <p style="color: grey">1982, Don Norman</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 7 copies</p>
+                            <p>Aungier Street: 7 copies</p>
+                            <p>Bolton Street: 0 copies</p>
+                            <p>Cathal Brugha Street: 3 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="TIRA" data-url="TIRA">
+            <div style="background-color:#474747; height:60px;" data-role="header">
+                <div class="ui-grid-d">
+                    <div class="ui-block-a breadcrumbHome">
+                        <a href="#homePage">
+                            <img src="images/menu.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-b breadcrumbRecent">
+                        <a href="#libraryPage">
+                            <img src="images/library.png" class="ui-btn breadcrumbImage">
+                        </a>
+                    </div>
+                    <div class="ui-block-c breadcrumbCurrent">
+                        <h4 class="breadcrumbText">Title</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <h2>The Inmates are Running the Asylum</h2>
+                        <p style="color: grey">1999, Alan Cooper</p>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Availability</h2>
+                            <p>Kevin Street: 2 copies</p>
+                            <p>Aungier Street: 0 copies</p>
+                            <p>Bolton Street: 0 copies</p>
+                            <p>Cathal Brugha Street: 1 copies</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </body>
+</html>
